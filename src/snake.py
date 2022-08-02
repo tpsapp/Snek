@@ -6,7 +6,7 @@ from pygame.math import Vector2
 class SNAKE:
     def __init__(self) -> None:
         self.respawn()
-        self.collect_sound = pygame.mixer.Sound('Sounds/beep.wav')
+        self.collect_sound = pygame.mixer.Sound('src/Sounds/beep.wav')
 
     def respawn(self):
         self.body = [Vector2(11, 10), Vector2(10, 10), Vector2(9, 10)]

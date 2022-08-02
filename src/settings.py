@@ -14,5 +14,5 @@ blue = (0, 0, 255)
 
 paused = True
 
-font_face = 'Fonts/ds-digi.ttf'
+font_face = 'src/Fonts/ds-digi.ttf'
 font_size = 32

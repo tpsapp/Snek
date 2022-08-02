@@ -11,7 +11,7 @@ class GAME:
         self.screen = pygame.display.set_mode(
             (settings.width, settings.height))
         self.font = pygame.font.Font(settings.font_face, settings.font_size)
-        self.error_sound = pygame.mixer.Sound('Sounds/error.wav')
+        self.error_sound = pygame.mixer.Sound('src/Sounds/error.wav')
         self.fruit = FRUIT()
         self.snake = SNAKE()
 
