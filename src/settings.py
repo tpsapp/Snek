@@ -1,3 +1,7 @@
+from pathlib import Path
+
+BASE_DIR = Path(__file__).resolve().parent
+
 cell_size = 32
 cell_count = 20
 width = cell_count * cell_size
@@ -11,8 +15,10 @@ black = (0, 0, 0)
 red = (255, 0, 0)
 green = (0, 255, 0)
 blue = (0, 0, 255)
+overlay_bg = (0, 0, 0, 160)
 
-paused = True
-
-font_face = 'src/Fonts/ds-digi.ttf'
+font_face = str(BASE_DIR / 'Fonts' / 'ds-digi.ttf')
 font_size = 32
+sound_beep = str(BASE_DIR / 'Sounds' / 'beep.wav')
+sound_error = str(BASE_DIR / 'Sounds' / 'error.wav')
+
